@@ -11,7 +11,7 @@ calcBtn.addEventListener("click", function () {
   const wordsPerPage = (w / 5) * l;
   let _time = "";
   let _speed = "";
-  wordsPerPageEl.innerText = `${wordsPerPage} words per page`;
+  wordsPerPageEl.innerText = `${Math.floor(wordsPerPage)} words per page`;
   for (let i = 60; i > 10; i -= 5) {
     _time += `<li>${i} sec</li>`;
     _speed += `<li>${Math.floor((wordsPerPage / i) * 60)} wpm</;i>`;
