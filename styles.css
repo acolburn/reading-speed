@@ -1,0 +1,72 @@
+body {
+  font-family: "Inter", sans-serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: <weight>; */
+  /* font-style: normal; */
+}
+
+input {
+  background: #6943ff;
+  color: white;
+  font-weight: 800;
+  font-size: 58px;
+  text-align: center;
+  width: 200px;
+  border: 1px solid white;
+  /* Next two lines + two sections needed to override */
+  /* default behavior which changed input colors when */
+  /* entering text */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* focused state */
+input:focus {
+  background: #6943ff;
+  color: #fff;
+  outline: none; /* optional: removes default focus ring */
+}
+
+/* webkit autofill (Chrome/Safari) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-internal-autofill-selected {
+  -webkit-text-fill-color: #fff !important;
+  background-color: #6943ff !important;
+  box-shadow: 0 0 0px 1000px #6943ff inset !important; /* ensures bg color applies */
+}
+
+button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 18px;
+  margin-bottom: 12px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.top {
+  background: #6943ff;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.row {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#words-per-page {
+  background: #6943ff;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
