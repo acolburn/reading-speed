@@ -38,9 +38,10 @@ input:-internal-autofill-selected {
 }
 
 button {
+  color: #6943ff;
   font-size: 16px;
   font-weight: 500;
-  padding: 6px 18px;
+  padding: 7px 19px;
   margin-bottom: 12px;
 }
 
