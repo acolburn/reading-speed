@@ -13,6 +13,7 @@ input {
   text-align: center;
   width: 200px;
   border: 1px solid white;
+  border-radius: 10px;
   /* Next two lines + two sections needed to override */
   /* default behavior which changed input colors when */
   /* entering text */
