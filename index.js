@@ -38,7 +38,7 @@ timerBtn.addEventListener("click", function () {
     endTime = Date.now();
     const timeDiff = (endTime - startTime) / 1000;
     calculateWordsPerPage();
-    wordsPerPageEl.innerText = `${timeDiff} sec, ${Math.floor(
+    wordsPerPageEl.innerText = `${Math.floor(timeDiff)} sec, ${Math.floor(
       (wordsPerPage / timeDiff) * 60
     )} wpm`;
     timerBtn.textContent = "START TIMER";
