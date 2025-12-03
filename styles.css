@@ -39,9 +39,11 @@ input:-internal-autofill-selected {
 
 button {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 6px 18px;
   margin-bottom: 12px;
+  border-radius: 10px;
+  border: 0px solid white;
 }
 
 li {
