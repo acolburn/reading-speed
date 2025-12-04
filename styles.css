@@ -57,7 +57,6 @@ li {
   color: white;
   text-align: center;
   border-radius: 10px;
-  margin-top: 10px;
 }
 
 .row {
@@ -74,4 +73,8 @@ li {
   font-size: 50px;
   padding: 20px;
   border-radius: 10px;
+}
+
+#h2-words {
+  padding-top: 20px;
 }
