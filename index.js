@@ -9,10 +9,22 @@ let startTime = Date.now();
 let endTime = Date.now();
 let wordsPerPage = 0;
 
+// Load existing values at startup
+// `localStorage.getItem("a key goes here")` --> "a value goes here"
+if (localStorage.getItem("words")) {
+  words.value = localStorage.getItem("words");
+}
+if (localStorage.getItem("lines")) {
+  lines.value = localStorage.getItem("lines");
+}
+
 function calculateWordsPerPage() {
   const w = words.value;
   const l = lines.value;
   wordsPerPage = (w / 5) * l;
+  // `localStorage.setItem("a key goes here", "a value goes here");`
+  localStorage.setItem("words", w);
+  localStorage.setItem("lines", l);
 }
 
 calcBtn.addEventListener("click", function () {
