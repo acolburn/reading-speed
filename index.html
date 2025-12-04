@@ -10,17 +10,19 @@
     <title>Reading Speed</title>
   </head>
   <body>
+    <header>
     <h1>Reading Speed</h1>
-    <div class="top">
-      <h2 id="h2-words">Words / 5 lines</h2>
+    </header>
+    <section class="top">
+      <h2>Words / 5 lines</h2>
       <input id="words"></input>
       <h2>Lines / page</h2>
       <input id="lines"></input>
-      <p><button id="timer-btn">START TIMER</button></p>
-      <p><button id="calculate-btn">SHOW TIME AND SPEED</button></p>
-    </div>
+      <button id="timer-btn">START TIMER</button>
+      <button id="calculate-btn">SHOW TIME AND SPEED</button>
+    </section>
       <div id="words-per-page"></div>
-    <div class="row">
+    <section class="row">
       <div class="col">
       <h3>Time / page</h3>
       <ul id="time"></ul>
@@ -29,7 +31,7 @@
       <h3>Reading speed</h3>
       <ul id="speed"></ul>
       </div>
-    </div>
+    </section>
     <script src="index.js"></script>
   </body>
 </html>
