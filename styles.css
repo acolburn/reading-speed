@@ -1,4 +1,7 @@
 body {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Inter", sans-serif;
   /* font-optical-sizing: auto; */
   /* font-weight: <weight>; */
@@ -8,6 +11,11 @@ body {
 h2 {
   margin-bottom: 20px;
   margin-top: 0px;
+}
+
+header {
+  text-align: center;
+  color: #6943ff;
 }
 
 input {
