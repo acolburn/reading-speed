@@ -62,7 +62,7 @@ li {
 /* layout */
 
 .top,
-.speed-banner,
+#speed-banner,
 .row {
   background: #1e2838;
   border-radius: 10px;
