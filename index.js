@@ -4,7 +4,8 @@ const words = document.getElementById("words");
 const lines = document.getElementById("lines");
 const time = document.getElementById("time");
 const speed = document.getElementById("speed");
-const wordsPerPageEl = document.getElementById("words-per-page");
+// const wordsPerPageEl = document.getElementById("words-per-page");
+const wordsPerPageEl = document.getElementById("speed-banner");
 let startTime = Date.now();
 let endTime = Date.now();
 let wordsPerPage = 0;
@@ -31,7 +32,7 @@ calcBtn.addEventListener("click", function () {
   calculateWordsPerPage();
   let _time = "";
   let _speed = "";
-  // wordsPerPageEl.innerText = `${wordsPerPage} words per page`;
+  wordsPerPageEl.innerText = `${wordsPerPage} words per page`;
   for (let i = 60; i > 10; i -= 5) {
     _time += `<li>${i} sec</li>`;
     _speed += `<li>${Math.floor((wordsPerPage / i) * 60)} wpm</;i>`;

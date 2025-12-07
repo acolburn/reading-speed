@@ -1,4 +1,6 @@
 body {
+  background-color: #101927;
+  color: whitesmoke;
   margin-left: auto;
   margin-right: auto;
   font-family: "Inter", sans-serif;
@@ -14,19 +16,18 @@ h2 {
 
 header {
   text-align: center;
-  color: #6943ff;
 }
 
 input {
   margin-top: 0;
   margin-bottom: 20px;
-  background: #6943ff;
-  color: white;
+  background: #334158;
+  color: whitesmoke;
   font-weight: 800;
   font-size: 58px;
   text-align: center;
   width: 200px;
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
   border-radius: 10px;
   /* Next two lines + two sections needed to override */
   /* default behavior which changed input colors when */
@@ -37,23 +38,15 @@ input {
 
 /* focused state */
 input:focus {
-  background: #6943ff;
+  background: #334158;
   color: #fff;
-  outline: none; /* optional: removes default focus ring */
-}
-
-/* webkit autofill (Chrome/Safari) */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-internal-autofill-selected {
-  -webkit-text-fill-color: #fff !important;
-  background-color: #6943ff !important;
-  box-shadow: 0 0 0px 1000px #6943ff inset !important; /* ensures bg color applies */
+  outline: none;
+  border: 1px solid #6d77e2;
 }
 
 button {
-  color: #6943ff;
+  background-color: #6d77e2;
+  color: whitesmoke;
   font-size: 16px;
   font-weight: 700;
   padding: 6px 18px;
@@ -66,30 +59,40 @@ li {
   list-style-type: none;
 }
 
+/* layout */
+
+.top,
+.speed-banner,
+.row {
+  background: #1e2838;
+  border-radius: 10px;
+  margin: 20px 15px;
+}
+
 .top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #6943ff;
-  color: white;
+  /* background: #1e2838; */
+  /* color: whitesmoke; */
   text-align: center;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding-top: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+
+#speed-banner {
+  /* background: #1e2838; */
+  /* color: white; */
+  font-weight: 500;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  /* border-radius: 10px; */
 }
 
 .row {
-  background: #f4f4f4;
+  /* background: #1e2838; */
   display: flex;
   justify-content: space-evenly;
-}
-
-#words-per-page {
-  background: #6943ff;
-  color: white;
-  font-weight: 500;
-  text-align: center;
-  font-size: 50px;
-  padding: 20px;
-  border-radius: 10px;
 }
