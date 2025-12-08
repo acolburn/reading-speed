@@ -43,17 +43,17 @@ calcBtn.addEventListener("click", function () {
 });
 
 timerBtn.addEventListener("click", function () {
-  if (timerBtn.textContent === "START TIMER") {
+  if (timerBtn.textContent === "Start Timer") {
     startTime = Date.now();
     wordsPerPageEl.innerText = "";
-    timerBtn.textContent = "STOP TIMER";
-  } else if (timerBtn.textContent === "STOP TIMER") {
+    timerBtn.textContent = "Stop Timer";
+  } else if (timerBtn.textContent === "Stop Timer") {
     endTime = Date.now();
     const timeDiff = (endTime - startTime) / 1000;
     calculateWordsPerPage();
     wordsPerPageEl.innerText = `${Math.floor(timeDiff)} sec, ${Math.floor(
       (wordsPerPage / timeDiff) * 60
     )} wpm`;
-    timerBtn.textContent = "START TIMER";
+    timerBtn.textContent = "Start Timer";
   }
 });
