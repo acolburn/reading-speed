@@ -6,6 +6,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+h1 {
+  color: #6d77e2;
+}
+
 h2 {
   margin-bottom: 20px;
   margin-top: 0px;
@@ -58,7 +62,9 @@ li {
 .row {
   background: #1e2838;
   border-radius: 10px;
-  margin: 20px 15px;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 .top {
