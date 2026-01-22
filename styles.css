@@ -6,21 +6,19 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h1 {
+h1,
+h3,
+#speed-banner {
   color: #6d77e2;
 }
 
-h2 {
+h2,
+input {
   margin-bottom: 20px;
   margin-top: 0px;
 }
 
-h3 {
-  color: #6d77e2;
-}
-
 #speed-banner {
-  color: #6d77e2;
   font-weight: 500;
   text-align: center;
   font-size: 2rem;
@@ -31,8 +29,6 @@ header {
 }
 
 input {
-  margin-top: 0;
-  margin-bottom: 20px;
   background: #334158;
   color: whitesmoke;
   font-weight: 800;
@@ -93,6 +89,9 @@ li {
   padding-top: 20px;
 }
 
+.responsive-container-right {
+  visibility: hidden;
+}
 .buttons {
   text-align: center;
 }
@@ -106,5 +105,6 @@ li {
   }
   .responsive-container-right {
     flex: 2;
+    visibility: visible;
   }
 }
