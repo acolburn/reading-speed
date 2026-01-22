@@ -11,29 +11,40 @@
   </head>
   <body>
     <header>
-    <h1>Reading Speed</h1>
+    <h1>How fast are you reading?</h1>
     </header>
-    <section class="top">
-      <h2>Words / 5 lines</h2>
-      <input id="words"></input>
-      <h2>Lines / page</h2>
-      <input id="lines"></input>
-    
-      <button id="timer-btn">Start Timer</button>
-      <button id="calculate-btn">Show Time and Speed</button>
+    <div class="responsive-container">
+      <div class="responsive-container-left">
+            <div> <!-- words/5 lines -->
+              <h2>Words / 5 lines</h2>
+              <input id="words"></input>
+            </div><!-- end words/5 lines -->
+            <div><!-- lines/page -->
+              <h2>Lines / page</h2>
+              <input id="lines"></input>
+            </div><!-- end lines/pag -->
+          
       
-    </section>
-      <div id="speed-banner">How fast are you reading?</div>
-    <section class="row">
-      <div class="col">
-      <h3>Time / page</h3>
-      <ul id="time"></ul>
-      </div>
-      <div class="col">
-      <h3>Reading speed</h3>
-      <ul id="speed"></ul>
-      </div>
-    </section>
+          <div class="buttons">
+            <button id="timer-btn">Start Timer</button><br>
+            <button id="calculate-btn">Show Reading Speeds Per Times</button>
+          </div><!-- end button -->
+    </div><!-- end responsive-container-left -->
+
+    <div class="responsive-container-right">
+      <div id="speed-banner"></div>
+      <section class="row">
+        <div class="col">
+          <ul id="time"></ul>
+        </div> <!-- end col -->
+        <div class="col">
+          <ul id="speed"></ul>
+        </div> <!-- end col-->
+      </section>
+    </div> <!-- end responsive-container-right -->
+
+  </div> <!-- end responsive-container -->
+
     <script src="index.js"></script>
   </body>
 </html>

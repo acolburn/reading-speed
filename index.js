@@ -4,6 +4,7 @@ const words = document.getElementById("words");
 const lines = document.getElementById("lines");
 const time = document.getElementById("time");
 const speed = document.getElementById("speed");
+const containerRight = document.getElementById("container-right");
 // const wordsPerPageEl = document.getElementById("words-per-page");
 const wordsPerPageEl = document.getElementById("speed-banner");
 let startTime = Date.now();
@@ -38,8 +39,9 @@ calcBtn.addEventListener("click", function () {
     _speed += `<li>${Math.floor((wordsPerPage / i) * 60)} wpm</;i>`;
   }
 
-  time.innerHTML = _time;
-  speed.innerHTML = _speed;
+  time.innerHTML = "<h3>Time/page</h3>" + _time;
+  speed.innerHTML = "<h3>Reading speed</h3>" + _speed;
+  containerRight.style.visibility = "visible";
 });
 
 timerBtn.addEventListener("click", function () {
@@ -52,8 +54,9 @@ timerBtn.addEventListener("click", function () {
     const timeDiff = (endTime - startTime) / 1000;
     calculateWordsPerPage();
     wordsPerPageEl.innerText = `${Math.floor(timeDiff)} sec, ${Math.floor(
-      (wordsPerPage / timeDiff) * 60
+      (wordsPerPage / timeDiff) * 60,
     )} wpm`;
     timerBtn.textContent = "Start Timer";
+    containerRight.style.visibility = "visible";
   }
 });
