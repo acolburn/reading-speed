@@ -12,6 +12,10 @@ h3,
   color: #6d77e2;
 }
 
+h2 {
+  color: whitesmoke;
+}
+
 h2,
 input {
   margin-bottom: 20px;
@@ -106,5 +110,21 @@ li {
   .responsive-container-right {
     flex: 2;
     visibility: visible;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2;
+    background: #1e2838;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 0px 20px;
   }
 }
