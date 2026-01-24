@@ -23,7 +23,7 @@ if (localStorage.getItem("lines")) {
 function calculateWordsPerPage() {
   const w = words.value;
   const l = lines.value;
-  wordsPerPage = (w / 5) * l;
+  wordsPerPage = Math.floor((w / 5) * l);
   // `localStorage.setItem("a key goes here", "a value goes here");`
   localStorage.setItem("words", w);
   localStorage.setItem("lines", l);
@@ -40,7 +40,7 @@ calcBtn.addEventListener("click", function () {
   }
 
   time.innerHTML = "<h3>Time/page</h3>" + _time;
-  speed.innerHTML = "<h3>Reading speed</h3>" + _speed;
+  speed.innerHTML = "<h3>Speed</h3>" + _speed;
   containerRight.style.visibility = "visible";
 });
 

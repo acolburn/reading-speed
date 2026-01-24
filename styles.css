@@ -116,12 +116,13 @@ li {
 @media (min-width: 1024px) {
   body {
     display: flex;
+    /* font-size: 20px; */
   }
   header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 2;
+    /* flex: 1; */
     background: #1e2838;
     border-radius: 10px;
     margin: 20px;
